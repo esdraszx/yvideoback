@@ -1,0 +1,35 @@
+- - - - - - - - - - - - - -
+
+USER account-type
+
+Least Permissions
+
+    Student - 3
+
+    Instructor - 2
+
+    Lab Assistant - 1
+
+    Admin - 0
+
+Most Permissions
+
+- - - - - - - - - - - - - -
+
+USER-COLLECTION account-role
+and
+USER-COURSE account-role
+
+Least Permissions
+
+    Auditing - 3
+
+    Student - 2
+
+    TA - 1
+
+    Instructor (not owner) - 0
+
+Most Permissions
+
+- - - - - - - - - - - - - -
