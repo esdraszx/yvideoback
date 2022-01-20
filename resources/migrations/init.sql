@@ -2,8 +2,8 @@
 
 DROP TABLE IF EXISTS annotations CASCADE;
 
---DROP EXTENSION IF EXISTS pgcrypto CASCADE; -- uncomment for new db
---CREATE EXTENSION pgcrypto; -- uncomment for new db
+DROP EXTENSION IF EXISTS pgcrypto CASCADE; -- uncomment for new db
+CREATE EXTENSION pgcrypto; -- uncomment for new db
 
 DROP TABLE IF EXISTS users CASCADE;
 CREATE TABLE users (
@@ -130,7 +130,7 @@ CREATE TABLE files (
    ,created  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    ,resource_id UUID REFERENCES resources(id)
    ,filepath TEXT
-   ,file_version TEXT REFERENCES languages(id)
+   ,file_version TEXT
    ,metadata TEXT
    , CONSTRAINT no_duplicate_filepaths UNIQUE (deleted, filepath)
 );

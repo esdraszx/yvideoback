@@ -26,6 +26,10 @@
   (testing "temp"
     (is true)))
 
+(deftest temp3
+  (testing "temp2"
+    (is true)))
+
 
 
 
