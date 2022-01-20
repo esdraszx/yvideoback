@@ -130,7 +130,7 @@ CREATE TABLE files (
    ,created  TIMESTAMP DEFAULT CURRENT_TIMESTAMP
    ,resource_id UUID REFERENCES resources(id)
    ,filepath TEXT
-   ,file_version
+   ,file_version TEXT
    ,metadata TEXT
    , CONSTRAINT no_duplicate_filepaths UNIQUE (deleted, filepath)
 );
