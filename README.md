@@ -24,7 +24,7 @@ This is where the API interacts with the database. No file outside this director
 
 All direct interaction takes place in `core.clj`. This file contains generic functions for several database operations, including creating data, reading data, updating data, and deleting data. Each of these operations relies on each table's ids. There are also functions for more complex operations, such as reading data contingent on multiple fields (the equivelant of `SELECT * FROM users WHERE first_name='Bilbo' AND last_name='Baggins'`).
 
-The database has several relationships between tables. Below is a visual representation of the database:
+The database has several relationships between tables. Below is a visual representation of the database:  
 
 ![alt text][db-image]
 
