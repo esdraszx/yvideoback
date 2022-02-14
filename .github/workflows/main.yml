@@ -25,6 +25,9 @@ jobs:
     
     - run: git clone https://github.com/BYU-ODH/yvideo-client.git
     
+    - name: Run Update Repo
+      run: sudo apt-get update
+    
     - name: Install ffmpeg / ffmprob
       run: sudo apt-get install ffmpeg
 
