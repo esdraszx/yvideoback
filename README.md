@@ -4,7 +4,7 @@
 
 Swagger API for DB manipulations for Y-Video
 
-## Code
+## Code change
 
 This API is written in Clojure and serves a front-end in React. The majority of the relevant code is found in the env, src, resources, and test directories.
 
